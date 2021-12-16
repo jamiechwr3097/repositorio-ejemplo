@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">  
+  <head>       
+    <meta charset="UTF-8">
+    <meta name="InfinityFitnessContact" content="Infinity Fitness Contact Page"/>
+    <meta name="keywords" content="fitness, gym, infinity, entrenador"/>
+    <title>Infinity Fitness Contact</title> 
+    <link rel="stylesheet" href="../css/styles.css"/>
+    <link rel="shortcut icon" href="../images/InfinityFitness-logos_black.png">
+    <script defer src="../javascript/script.js"></script>
+  </head>
+  <body>
+    <div id="loader-wrapper">
+      <span class="loader"></span>
+    </div>
+    <div id="allHome-content">
+    <header id="navegador">
+      <!--CONTENIDO SIDEBAR-->
+      <nav id="sidebar">
+        <div id="dismiss" onclick="desactivarSideBar()">
+          <!-- Añadir flecha izquierda (arrow-left) de Font Awesome -->
+          <span class="arrow-out"></span>
+        </div>
+
+        <div class="sidebar-header">
+          <h3>Main Menu</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+          <li class="active">
+            <a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="#" style="color:#7A7A7A">CONTACT</a></li>
+          <li><a href="trainers.html">TRAINERS</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+        </ul>
+      </nav>
+
+      <nav class="sidebarColl">
+        <div id="img-sidebar">
+          <button type="button" id="sidebarCollapse" onclick="activarSideBar()">
+          <!-- Añadir menú de barras (bars) de Font Awesome -->
+            <img src="../images/list.png">
+          </button>
+        </div>
+      </nav>
+      <a href="index.html" id="logo-link"><img src="../images/InfinityFitness-logos_white.png" class="logo"></a>
+
+      <div id="navbar">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="#" style="color:#7A7A7A">CONTACT</a></li>
+          <li><a href="trainers.html">TRAINERS</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+        </ul>
+      </div>
+
+      <div id="socialMedia">
+        <a href="maintenance.html" id="carro-link"><img src="../images/shopping-cart.png" id="cart"></a>
+        <img src="../images/login.png" id="login">
+      </div>
+      <div id="overlay" class="overlay" onclick="desactivarSideBar()"></div>
+    </header>
+    <article id="contact-page">
+      <header id="title">
+        <h1>CONTACT US</h1>
+      </header>
+      <div class="contact-container">
+        <div class="our-details">
+          <h2>Infinity Fitness</h2>
+          <p>Carrer Confrides Nº9</p>
+          <p>605837187</p>
+          <p>infinityFitnessGym@gmail.com</p>
+          <p>www.infinityFitnessGym.com</p>
+        </div>
+
+        <div class="contact-form">
+          <header id="title">
+            <h2>Contact form:</h2>
+          </header>
+          <form>
+            <input type="text" id="form-name" name="form-name" value="Name">
+            <br>
+
+            <input type="text" id="form-email" name="form-email" value="Email">
+            <br>
+
+            <textarea name="more-info" id="more-info" cols="30" rows="10">Tell us more about yourself here...</textarea>
+            <br>
+
+            <a href="maintenance.html"><input type="submit" id="form-button" value="Submit"></a>
+          </form>
+        </div>
+
+        <div class="map-area">
+          <header id="map-title">
+            <h2>Find Us:</h2>
+          </header>
+          <figure id="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3122.241548919801!2d-0.2474112489464439!3d38.50513967747457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6219c07b32186b%3A0x73b8332f1bee212d!2sCarrer%20Confrides%2C%2003570%20La%20Vila%20Joiosa%2C%20Alacant!5e0!3m2!1sen!2ses!4v1636732905447!5m2!1sen!2ses" allowfullscreen="" loading="lazy"></iframe>
+          </figure>
+        </div>
+      </div>
+    </article>
+
+    <aside id="modal">
+      <div id="modal_content">
+        <header>
+            <h1>Login</h1>
+            <div class="modal_close-bar">
+                <span id="exit">X</span>
+            </div>
+        </header>
+        <article>
+          <form>
+            <input type="text" id="form-name" name="form-name" value="Name">
+            <br>
+
+            <input type="text" id="form-email" name="form-email" value="Email">
+            <br>
+
+            <input type="submit" id="form-button" value="Submit">
+          </form>
+          <hr>
+          <section id="new-user">
+            <a href="#">Create a new account</a>
+          </section>
+        </article>
+      </div>
+    </aside>
+  </div>
+  </body>
+</html>

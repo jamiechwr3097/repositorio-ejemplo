@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">  
+  <head>       
+    <meta charset="UTF-8">
+    <meta name="InfinityFitnessServices" content="Infinity Fitness Services Page"/>
+    <meta name="keywords" content="fitness, gym, infinity, entrenador"/>
+    <title>Infinity Fitness Services</title> 
+    <link rel="stylesheet" href="../css/styles.css"/>
+    <link rel="shortcut icon" href="../images/InfinityFitness-logos_black.png">
+    <script defer src="../javascript/script.js"></script>
+  </head>
+  <body>
+    <div id="loader-wrapper">
+      <span class="loader"></span>
+    </div>
+    <div id="allHome-content">
+    <header id="navegador">
+      <!--CONTENIDO SIDEBAR-->
+      <nav id="sidebar">
+        <div id="dismiss" onclick="desactivarSideBar()">
+          <!-- Añadir flecha izquierda (arrow-left) de Font Awesome -->
+          <span class="arrow-out"></span>
+        </div>
+
+        <div class="sidebar-header">
+          <h3>Main Menu</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+          <li class="active">
+            <a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="trainers.html">TRAINERS</a></li>
+          <li><a href="#" style="color:#7A7A7A">SERVICES</a></li>
+        </ul>
+      </nav>
+
+      <nav class="sidebarColl">
+        <div id="img-sidebar">
+          <button type="button" id="sidebarCollapse" onclick="activarSideBar()">
+            <!-- Añadir menú de barras (bars) de Font Awesome -->
+            <img src="../images/list.png">
+          </button>
+        </div>
+      </nav>
+      <a href="index.html" id="logo-link"><img src="../images/InfinityFitness-logos_white.png" class="logo"></a>
+
+      <div id="navbar">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="trainers.html">TRAINERS</a></li>
+          <li><a href="#" style="color:#7A7A7A">SERVICES</a></li>
+        </ul>
+      </div>
+
+      <div id="socialMedia">
+        <a href="maintenance.html" id="carro-link"><img src="../images/shopping-cart.png" id="cart"></a>
+        <img src="../images/login.png" id="login">
+      </div>
+      <div id="overlay" class="overlay" onclick="desactivarSideBar()"></div>
+    </header>
+    <article id="main-subscription">
+      <header><h1>INFINITY FITNESS SERVICES</h1></header>
+      <article id="sub-container">
+        <section class="sub-content" id="primera-caja">
+          <p class="sub-type">Free</p>
+          <h2 class="sub-price">0€</h2>
+          <div class="include1">
+            <img src="../images/tick.png">
+            <h3>Online guide for training from home.</h3>
+          </div>
+          <div class="include1">
+            <img src="../images/cross.png">
+            <h3>Personal trainer at disposal 24/7 online or in person for nutrition.</h3>
+          </div>
+          <div class="include1">
+            <img src="../images/cross.png">
+            <h3>Personal trainer at disposal 24/7 online or in person for training.</h3>
+          </div>
+          <a href="maintenance.html"><button class="sub-button">Hire Service</button></a>
+        </section>
+
+        <section class="sub-content" id="segunda-caja">
+          <p class="sub-type">Pro</p>
+          <h2 class="sub-price">99€</h2>
+          <div class="include1">
+            <img src="../images/tick.png">
+            <h3>Online guide for training from home.</h3>
+          </div>
+          <div class="include1">
+            <img src="../images/tick.png">
+            <h3>Personal trainer at disposal 24/7 online or in person for nutrition.</h3>
+          </div>
+          <div class="include1">
+            <img src="../images/cross.png">
+            <h3>Personal trainer at disposal 24/7 online or in person for training.</h3>
+          </div>
+          <a href="maintenance.html"><button class="sub-button">Hire Pro Service</button></a>
+        </section>
+
+        <section class="sub-content" id="ultima-caja">
+          <p class="sub-type">All Access</p>
+          <h2 class="sub-price">179€</h2>
+          <div class="include1">
+            <img src="../images/tick.png">
+            <h3>Online guide for training from home.</h3>
+          </div>
+          <div class="include1">
+            <img src="../images/tick.png">
+            <h3>Personal trainer at disposal 24/7 online or in person for nutrition.</h3>
+          </div>
+          <div class="include1">
+            <img src="../images/tick.png">
+            <h3>Personal trainer at disposal 24/7 online or in person for training.</h3>
+          </div>
+          <div class="include1">
+            <img src="../images/tick.png">
+            <h3>Training equipment included.</h3>
+          </div>
+          <a href="maintenance.html"><button class="sub-button">Hire All Access</button></a>
+        </section>
+      </article>
+    </article>
+
+    <aside id="modal">
+      <div id="modal_content">
+        <header>
+            <h1>Login</h1>
+            <div class="modal_close-bar">
+                <span id="exit">X</span>
+            </div>
+        </header>
+        <article>
+          <form>
+            <input type="text" id="form-name" name="form-name" value="Name">
+            <br>
+
+            <input type="text" id="form-email" name="form-email" value="Email">
+            <br>
+
+            <input type="submit" id="form-button" value="Submit">
+          </form>
+          <hr>
+          <section id="new-user">
+            <a href="#">Create a new account</a>
+          </section>
+        </article>
+      </div>
+    </aside>
+    </div>
+  </body>
+</html>

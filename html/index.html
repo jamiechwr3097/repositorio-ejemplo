@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">  
+  <head>       
+    <meta charset="UTF-8">
+    <meta name="InfinityFitnessHome" content="Infinity Fitness Home Page"/>
+    <meta name="keywords" content="fitness, gym, infinity, entrenador"/>
+    <title>Infinity Fitness Home</title> 
+    <link rel="stylesheet" href="../css/styles.css"/>
+    <link rel="shortcut icon" href="../images/InfinityFitness-logos_black.png">
+  </head>
+  <body>
+    <div id="loader-wrapper">
+      <span class="loader"></span>
+    </div>
+    <div id="allHome-content">
+    <header id="navegador">
+      <!--CONTENIDO SIDEBAR-->
+      <nav id="sidebar">
+        <div id="dismiss" onclick="desactivarSideBar()">
+            <!-- Añadir flecha izquierda (arrow-left) de Font Awesome -->
+          <span class="arrow-out"></span>
+        </div>
+
+        <div class="sidebar-header">
+          <h3>Main Menu</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+          <li class="active">
+              <a href="#" style="color:#7A7A7A">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="trainers.html">TRAINERS</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+        </ul>
+      </nav>
+
+      <nav class="sidebarColl">
+        <div id="img-sidebar">
+          <button type="button" id="sidebarCollapse" onclick="activarSideBar()">
+            <!-- Añadir menú de barras (bars) de Font Awesome -->
+            <img src="../images/list.png">
+          </button>
+        </div>
+      </nav>
+      <a href="index.html" id="logo-link"><img src="../images/InfinityFitness-logos_white.png" class="logo"></a>
+
+      <div id="navbar">
+        <ul>
+          <li><a href="#" style="color:#7A7A7A">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="trainers.html">TRAINERS</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+        </ul>
+      </div>
+
+      <div id="socialMedia">
+        <a href="maintenance.html" id="carro-link"><img src="../images/shopping-cart.png" id="cart"></a>
+        <img src="../images/login.png" id="login">
+      </div>
+      <div id="overlay" class="overlay" onclick="desactivarSideBar()"></div>
+    </header>
+    <article id="index-body">
+      <section id="index-title">
+        <h1>CHALLENGE</h1> 
+        <h1 class="second-part">YOUR LIMITS</h1>
+      </section>
+      <section id="mensaje-index">
+        <h2>LEARN HOW TO ACHIEVE YOUR IDEAL BODY WITH OUR FITNESS GUIDE</h2>
+        <button href="services.html">TRY FREE TRIAL</button>
+      </section>
+    </article>
+
+    <aside id="modal">
+      <div id="modal_content">
+        <header>
+            <h1>Login</h1>
+            <div class="modal_close-bar">
+                <span id="exit">X</span>
+            </div>
+        </header>
+        <article>
+          <form>
+            <input type="text" id="form-name" name="form-name" value="Name">
+            <br>
+
+            <input type="text" id="form-email" name="form-email" value="Email">
+            <br>
+
+            <input type="submit" id="form-button" value="Submit">
+          </form>
+          <hr>
+          <section id="new-user">
+            <a href="#">Create a new account</a>
+          </section>
+        </article>
+      </div>
+    </aside>
+  </div>
+  </body>
+  <script defer src="../javascript/script.js"></script>
+</html>
